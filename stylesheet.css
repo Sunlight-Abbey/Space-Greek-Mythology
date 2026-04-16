@@ -1,0 +1,454 @@
+.mercury img{
+    width: 300px;
+}
+
+.venus img{
+    width: 300px;
+}
+
+.earth img{
+    width:300px;
+}
+
+.mars img{
+    width:300px;
+}
+
+.jupiter img{
+    width:300px;
+}
+
+.saturn img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+
+}
+
+.uranus img{
+    width:300px;
+}
+
+.neptune img{
+    width: 300px;
+}
+
+.ceres img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+
+.ceres {
+    text-align: justify;
+}
+
+.pluto img{
+    width:300px;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+.haumea img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+.makemake img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+.eris img{
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    display: block;
+}
+
+.row1 {
+    
+    display:flex;
+    
+    gap: 20px;
+}
+
+.row2 {
+    display: flex;
+    
+    gap: 20px;
+}
+
+.row3 {
+    justify-content: center;
+    display:flex;
+
+    gap: 20px;
+}
+
+.row4 {
+    justify-content: center;
+    display: flex;
+
+    gap: 20px;
+}
+
+.rowlol th, td{
+    border: 1px solid white;
+    font-family: "Single Day", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.rowlol table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Single Day", cursive;
+    font-style: normal;
+}
+
+.rowlol img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+}
+
+.rowlol{   
+    float: right;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+}
+
+
+.button{
+    position: fixed;
+    bottom: 5px;
+    left: 5px;
+}
+
+
+.rowven th, td{
+    border: 1px solid white;
+}
+
+.rowven table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.rowven img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+}
+
+.rowven{   
+    float: right;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+}
+
+.rowearth th, td{
+    border: 1px solid white;
+}
+
+.rowearth table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.rowearth img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+}
+
+.rowearth{   
+    float: right;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+}
+
+.rowmars th, td{
+    border: 1px solid white;
+}
+
+.rowmars table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.rowmars img{
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+    display: block;
+}
+
+.rowmars{   
+    float: right;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 20px;
+}
+
+.spot img{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    gap: 20px;
+}
+
+.scroll {
+    overflow: auto;
+    padding: 10px;
+    white-space: nowrap;
+    flex: left;
+    display: flex;
+    gap: 20px;
+}
+
+.rowpurr img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.rowpurr{   
+    float: right;
+    display:flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+}
+
+.maincontent {
+    top: 0;
+    left: 1;
+}
+
+.hidden {
+    display: none;
+}
+
+body{
+    background-image: url("assets/space-background.jpg");
+}
+
+h1 {
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+}
+h2 {
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+  text-align: center;
+}
+
+p{
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+}
+
+a{
+    background-color: rgb(80, 64, 76);
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    padding: 10px 20px;        
+    border: 2px solid white;   
+    border-radius: 8px;        
+    text-decoration: none;     
+    display: inline-flex; 
+    margin-top: 15px;
+}
+
+.homepage{
+    background-color: rgb(116, 82, 116);
+    text-align: center;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+
+#startBtn{
+    background-color: rgb(80, 64, 76);
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    padding: 10px 20px;        
+    border: 2px solid white;   
+    border-radius: 8px;        
+    text-decoration: none;     
+    display: block; 
+    font-size: 101%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+img{
+    background-color: rgb(80, 64, 76);
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+#q1 button {
+    background-color: rgb(80, 64, 76);
+    color: white;
+    font-family: "Single Day", cursive;
+
+    padding: 10px 20px;
+    margin: 8px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+#q2 button {
+    background-color: rgb(80, 64, 76);
+    color: white;
+    font-family: "Single Day", cursive;
+
+    padding: 10px 20px;
+    margin: 8px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+#q3 button {
+    background-color: rgb(80, 64, 76);
+    color: white;
+    font-family: "Single Day", cursive;
+
+    padding: 10px 20px;
+    margin: 8px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+#q4 button {
+    background-color: rgb(80, 64, 76);
+    color: white;
+    font-family: "Single Day", cursive;
+
+    padding: 10px 20px;
+    margin: 8px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+#q5 button {
+    background-color: rgb(80, 64, 76);
+    color: white;
+    font-family: "Single Day", cursive;
+
+    padding: 10px 20px;
+    margin: 8px;
+
+    border: 2px solid white;
+    border-radius: 10px;
+
+    cursor: pointer;
+}
+
+#godImage{
+    margin: auto;
+    display: block;
+    width: 200px;
+}
+
+#resultContent table{
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Single Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+#resultContent table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    width:20%
+}
+
+#result{
+    background-color:rgb(116, 82, 116);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+
+}
+
+#start {
+    background-color:rgb(116, 82, 116);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center; /* Horizontal */
+    align-items: center;     /* Vertical */
+    
+}
+
+.rowlol{
+background-color:rgb(116, 82, 116);
+    padding: 20px;
+}
+
+.maincontent{
+background-color:rgb(116, 82, 116);
+    padding: 20px;
+}
+
+
+

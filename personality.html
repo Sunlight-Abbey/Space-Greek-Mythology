@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    
+    <title>Constellations</title>
+</head>
+<body>
+        <a href="index.html" class="button">Back</a>
+
+    
+    <div id="start">
+        <h1>Ready to Find Which Greek God You Are?</h1>
+
+        <button id="startBtn">Let's go!</button>
+
+    </div>
+
+    <div id="quiz" class="hidden">
+
+        <div id="q1">
+            <h2>Pick a trait that best describes you</h2>
+            <button onclick="addScore(['Ares']); nextQuestion();">Bold</button>
+            <button onclick="addScore(['Hera']); nextQuestion();">Elegant</button>
+            <button onclick="addScore(['Poseidon']); nextQuestion();">Moody</button>
+            <button onclick="addScore(['Demeter']); nextQuestion();">Protective</button>
+            <button onclick="addScore(['Aphrodite']); nextQuestion();">Passionate</button>
+            <button onclick="addScore(['Hephaestus']); nextQuestion();">Mysterious</button>
+            <button onclick="addScore(['Athena']); nextQuestion();">Wise</button>
+            <button onclick="addScore(['Artemis']); nextQuestion();">Adventurous</button>
+            <button onclick="addScore(['Apollo']); nextQuestion();">Creative</button>
+            <button onclick="addScore(['Hermes']); nextQuestion();">Playful</button>
+            <button onclick="addScore(['Dionysus']); nextQuestion();">Charismatic</button>
+            <button onclick="addScore(['Hades']); nextQuestion();">Stern</button>
+            <button onclick="addScore(['Zeus']); nextQuestion();">Prideful</button>
+        </div>
+
+        <div id="q2" class="hidden">
+            <h2>Are you introverted or extroverted?</h2>
+            <button onclick="addScore(['Zeus','Hermes','Dionysus', 'Aphrodite', 'Apollo', 'Ares']); nextQuestion();">Extroverted</button>
+            <button onclick="addScore(['Hera', 'Poseidon', 'Demeter']); nextQuestion();">Ambivert</button>
+            <button onclick="addScore(['Hades', 'Artemis', 'Athena', 'Hephaestus']); nextQuestion();">Introvert</button>
+        </div>
+
+        <div id="q3" class="hidden">
+            <h2>Pick an Animal</h2>
+            <button onclick="addScore(['Ares', 'Hades']); nextQuestion();">Dog</button>
+            <button onclick="addScore(['Zeus','Hera','Athena','Aphrodite','Apollo']); nextQuestion();">Bird</button>
+            <button onclick="addScore(['Poseidon', 'Hephaestus']); nextQuestion();">Horse</button>
+            <button onclick="addScore(['Demeter']); nextQuestion();">Pig</button>
+            <button onclick="addScore(['Artemis']); nextQuestion();">Deer</button>
+            <button onclick="addScore(['Poseidon', 'Apollo']); nextQuestion();">Dolphin</button>
+            <button onclick="addScore(['Hermes']); nextQuestion();">Turtle</button>
+            <button onclick="addScore(['Dionysus']); nextQuestion();">Goat</button>
+            <button onclick="addScore(['Hermes', 'Hades']); nextQuestion();">Ram</button>
+        </div>
+
+        <div id="q4" class="hidden">
+            <h2>What do you do in your free time?</h2>
+            <button onclick="addScore(['Dionysus', 'Aphrodite', 'Hermes', 'Zeus']); nextQuestion();">Party with friends and meet new people</button>
+            <button onclick="addScore(['Artemis', 'Demeter']); nextQuestion();">Spend time with nature and go on walks</button>
+            <button onclick="addScore(['Apollo', 'Hephaestus', 'Athena']); nextQuestion();">Be creative</button>
+            <button onclick="addScore(['Ares']); nextQuestion();">Work out</button>
+            <button onclick="addScore(['Hades', 'Artemis']); nextQuestion();">Chill at home</button>
+            <button onclick="addScore(['Aphrodite', 'Hera']); nextQuestion();">Dress up and take photos</button>
+        </div>
+
+        <div id="q5" class="hidden">
+            <h2>What is your Zodiac Sign?</h2>
+            <button onclick="addScore(['Ares', 'Athena']); nextQuestion();">Aries</button>
+            <button onclick="addScore(['Aphrodite']); nextQuestion();">Taurus</button>
+            <button onclick="addScore(['Hermes']); nextQuestion();">Gemini</button>
+            <button onclick="addScore(['Hera', 'Artemis']); nextQuestion();">Cancer</button>
+            <button onclick="addScore(['Apollo']); nextQuestion();">Leo</button>
+            <button onclick="addScore(['Demeter', 'Athena','Dionysus']); nextQuestion();">Virgo</button>
+            <button onclick="addScore(['Hephaestus']); nextQuestion();">Libra</button>
+            <button onclick="addScore(['Hades']); nextQuestion();">Scorpio</button>
+            <button onclick="addScore(['Zeus']); nextQuestion();">Sagittarius</button>
+            <button onclick="addScore(['Zeus']); nextQuestion();">Capricorn</button>
+            <button onclick="addScore(['Poseidon']); nextQuestion();">Aquarius</button>
+            <button onclick="addScore(['Poseidon']); nextQuestion();">Pisces</button>
+        </div>
+
+    </div>
+
+    <div id="result" class="hidden">
+    <h1>The Gods have Chosen You as:</h1>
+
+    <div id="resultContent">
+        <h2 id="godName"></h2>
+        <img id="godImage" alt="Greek god image">
+        <p id="godDescription"></p>
+
+        <table>
+            <tr>
+                <th>Planet</th>
+                <th>Zodiac</th>
+                <th>Domain</th>
+            </tr>
+            <tr>
+                <td id="godPlanet"></td>
+                <td id="godZodiac"></td>
+                <td id="godDomain"></td>
+            </tr>
+        </table>
+    </div>
+    </div>
+
+    
+
+
+<script src="script.js"></script>
+</body>
+</html>
